@@ -24,12 +24,14 @@
 
 - we need to configure the reporter in your config file to skip the HTML report generation and save each individual JSON file in the cypress/results folder.
   
+```  
 "reporterOptions": {
     "reportDir": "cypress/results",
     "overwrite": false,
     "html": false,
     "json": true
 }
+```
 
 - to get report run these command (cd /your/project/path) `node_modules/.bin/cypress run --headless` 
 
@@ -40,10 +42,10 @@
 ### CI pipeline with GitHub Actions
 
 - create a new repository on the command line
-    `echo "# pantheontest" >> README.md`
-    `git init`
-    `git add README.md`
-    `git commit -m "first commit"`
-    `git branch -M main`
-    `git remote add origin https://github.com/aakashmurnal/pantheontest.git`
-    `git push -u origin main`
+    - `echo "# pantheontest" >> README.md`
+    - `git init`
+    - `git add README.md`
+    - `git commit -m "first commit"`
+    - `git branch -M main`
+    - `git remote add origin https://github.com/aakashmurnal/pantheontest.git`
+    - `git push -u origin main`
