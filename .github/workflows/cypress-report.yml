@@ -19,7 +19,6 @@ jobs:
       - name: Install cypress and verify
         run: |
           npm install
-          $(npm bin)/cypresss verify
       
       - name: Run Cypress tests
         run: npm run test:chrome
