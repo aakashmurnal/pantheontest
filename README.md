@@ -36,3 +36,14 @@
 - then we can combine them using the mochawesome-merge utility `npx mochawesome-merge "cypress/results/*.json" > mochawesome.json`
 
 - we can now generate a combined HTML report from the mochawesome.json file using the `npx marge mochawesome.json`
+
+### CI pipeline with GitHub Actions
+
+- create a new repository on the command line
+    `echo "# pantheontest" >> README.md`
+    `git init`
+    `git add README.md`
+    `git commit -m "first commit"`
+    `git branch -M main`
+    `git remote add origin https://github.com/aakashmurnal/pantheontest.git`
+    `git push -u origin main`
