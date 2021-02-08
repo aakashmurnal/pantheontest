@@ -19,7 +19,7 @@ describe('Verifying end to end checkout flow for purchasing product using credit
     /*
         Test-Case - 02
     */
-    it.skip('Verify whether user is able to add product to cart or not', () => {
+    it('Verify whether user is able to add product to cart or not', () => {
         // Verify the product is available or not in demoblaze
         cy.get(productStorePage.getCard).contains(productStorePage.failProductName).click()
         // Verifying respective product page, after selecting Iphone 6 32gb mobile
