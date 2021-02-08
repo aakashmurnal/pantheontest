@@ -31,10 +31,10 @@ jobs:
           cp -r cypress/screenshots public/screenshots
           
       - name: Merge test reports
-        run: npm run combine:report
+        run: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
         
       - name: Generate HTML report
-        run: npm run generate:report
+        run: npx marge mochawesome.json
         
       - name: Deploy report page to GitHub Page
         uses: peaceiris/actions-gh-pages@v3
